@@ -11,4 +11,14 @@ $(function(){
             $("#carouselButton").children("i").addClass("fa-pause");  
         }
     });
+
+    // Open Reserve Camp Sites modal
+    $("#reserveButton").click(function(){
+        $("#reserveModal").modal("show");
+    });
+
+    // Open log in modal
+    $("#loginButton").click(function(){
+        $("#loginModal").modal("show");
+    });
 });
