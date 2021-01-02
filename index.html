@@ -6,16 +6,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS (Must be placed after Bootstrap CSS!) -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />      
-
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css">          
+     <!-- endbuild -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -31,7 +28,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <a class="btn btn-info text-nowrap" href="#reserveForm" role="button" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
+                    <a class="btn btn-info text-nowrap" role="button" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</a>
                     <!-- <a class="btn btn-info text-nowrap" href="#reserveForm" role="button" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Or call us at<br/><strong>1-206-555-1234</strong>">Reserve Campsite</a>                     -->
                 </div>
             </div> 
@@ -302,31 +299,17 @@
             </div>    
         </div>
     </footer>
-    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
+    <!-- <script>
         $(function(){
             $('[data-toggle="tooltip"]').tooltip()
         });
-    </script>
-    <script>
-        $(function(){
-           $(".carousel").carousel({interval: 2000});
-           $("#carouselButton").click(function(){
-               if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-               } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause");  
-               }
-           });
-        });
-    </script>
-
+    </script> -->
 </body>
 </html>
